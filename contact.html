@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Public School</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+.contact-container{
+    width:90%;
+    max-width:1100px;
+    margin:60px auto;
+}
+.contact-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:40px;
+    color:goldenrod;
+}
+.contact-wrapper{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+}
+.contact-info{
+    flex:1;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+.contact-info h3{
+    margin-bottom:20px;
+    color:goldenrod;
+}
+.contact-info p{
+    margin:12px 0;
+    line-height:1.6;
+}
+.contact-form{
+    flex:1;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+.contact-form h3{
+    margin-bottom:20px;
+    color:goldenrod;
+}
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin:15px 0;
+    border:none;
+    border-radius:8px;
+    background:rgba(255,255,255,0.1);
+    color:white;
+    font-size:1rem;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border:1px solid goldenrod;
+}
+
+.contact-form button{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:goldenrod;
+    cursor:pointer;
+    transition:0.3s ease;
+    font-weight:bold;
+}
+.contact-form button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(218,165,32,0.6);
+}
+.map{
+    margin-top:40px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+@media(max-width:768px){
+    .contact-wrapper{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="contact-container">
+
+    <h1 class="contact-title">Contact Us</h1>
+
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h3>School Information</h3>
+            <p><strong>Address:</strong> 123 Knowledge Street, Hyderabad, India</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Email:</strong> info@publicschool.com</p>
+            <p><strong>Working Hours:</strong> Mon – Sat | 8:00 AM – 4:00 PM</p>
+        </div>
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+
+    </div>
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=Hyderabad&output=embed" 
+            width="100%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+</div>
+</body>
+</html>

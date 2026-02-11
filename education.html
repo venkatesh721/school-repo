@@ -1,0 +1,94 @@
+<style>
+.edu-section{
+    margin:60px auto;
+    width:90%;
+    max-width:1000px;
+    font-family: Georgia, serif;
+}
+.edu-section .title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2.5rem;
+    color:goldenrod;
+    animation: fadeDown 1s ease forwards;
+}
+.edu-section .card{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+    transition:0.4s ease;
+    animation: fadeUp 1s ease forwards;
+}
+.edu-section .card:hover{
+    transform: translateY(-10px);
+    box-shadow:0 25px 60px rgba(0,0,0,0.7);
+}
+.edu-section .card h2{
+    margin-bottom:20px;
+    color:goldenrod;
+}
+.edu-section ul{
+    list-style:none;
+    padding:0;
+}
+.edu-section ul li{
+    padding:12px 15px;
+    margin:10px 0;
+    background: rgba(255,255,255,0.05);
+    border-left:4px solid goldenrod;
+    border-radius:10px;
+    transition: all 0.4s ease;
+    cursor:pointer;
+}
+.edu-section ul li:hover{
+    background: goldenrod;
+    color:black;
+    transform: translateX(12px);
+    box-shadow:0 10px 20px rgba(218,165,32,0.6);
+}
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
+
+<div class="edu-section">
+    <h1 class="title">Education Structure</h1>
+    <div class="card">
+        <h2>Primary Education</h2>
+        <ul>
+            <li>Nursery   TEL / ENG   Cultural Activities</li>
+            <li>Class 1   TEL / ENG   Cultural Activities</li>
+            <li>Class 2   TEL / ENG   Cultural Activities</li>
+            <li>Class 3   TEL / ENG   Cultural Activities</li>
+            <li>Class 4   TEL / ENG   Cultural Activities</li>
+            <li>Class 5   TEL / ENG   Cultural Activities</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>Secondary Education</h2>
+        <ul>
+            <li>Class 6   TEL / ENG   Cultural Activities</li>
+            <li>Class 7   TEL / ENG   Cultural Activities</li>
+            <li>Class 8   TEL / ENG   Cultural Activities</li>
+            <li>Class 9   TEL / ENG   Cultural Activities</li>
+            <li>Class 10  TEL / ENG  Cultural Activities</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Intermediate</h2>
+        <ul>
+            <li>1st Year  MPC / CEC / BPC   TEL / ENG</li>
+            <li>2nd Year  MPC / CEC / BPC   TEL / ENG</li>
+        </ul>
+    </div>
+
+</div>
